@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Google Analytics -->
+	<script>
+	   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	   ga('create', 'UA-119484651-1', 'auto');
+	   ga('send', 'pageview');
+	</script>
+    <!-- End Google Analytics -->
+    
+	<meta charset="utf-8">
+	<meta content="ie=edge" http-equiv="x-ua-compatible">
+
+	<title>Box Breathing Exercise | Vividwell Breathe</title>
+    
+	<meta content="Box breathing, or four-square breathing, involves inhaling to a count of four, holding your lungs full for a count of four, exhaling at the same pace, and holding your lungs empty for a count of four. Repeat for as long as required." name="description">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans:300,400,700" rel="stylesheet">
+	<link href="style.css?v=3" rel="stylesheet">
+    <!--[if gte IE 9]>
+        <link rel="stylesheet" type="text/css" href="ie9.css" />
+    <![endif]-->
+    
+	<link href="favicon.png" rel="shortcut icon" type="image/png">
+    
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="Breathe" name="apple-mobile-web-app-title">
+</head>
+
+<body>
+	<div class="browserWarning">
+		This web app requires a more modern browser. Please upgrade to at least Internet Explorer 10 or <a href="http://outdatedbrowser.com/en" target="_blank"></a>explore other browser options.
+	</div>
+
+	<div class="main">
+		<div class="bg cssTransitionsAfterPageLoad"></div>
+
+		<div class="wrapper">
+			<a class="button hideOnMobile" href="https://vividwell.com/" id="appButton"><span class="buttonText cssTransitionsAfterPageLoad">Free Mental wellbeing toolkit</span></a>
+
+			<div class="logo">
+				<span class="buttonText cssTransitionsAfterPageLoad"><svg viewbox="0 0 1887 1136" xmlns="http://www.w3.org/2000/svg">
+				<path d="M1882.125 10.094h-784.246L553.945 748.519l207.259 281.362c94.337 128.059 274.158 131.938 371.212 0l55.88-75.97-111.817-151.805-64.388 86.704c-35.233 47.45-95.404 46.534-129.75 0l-104-140.87c206.167-279.938 156.58-212.592 404.363-549.038h336.358l-292.016 397.496-129.271-175.488L985.7 572.823l241.625 328.025c218.27-296.75 436.392-593.796 654.8-890.75v-.004zM373.908 198.902h336.358l84.809 116.117 111.97-152.013L795.088 10.09H10.85l504.03 685.326 111.996-152.05-252.967-344.463z" fill="#fff" fill-rule="nonzero">
+				</path></svg> <strong>breathe</strong></span>
+			</div>
+            
+			<span class="buttonText cssTransitionsAfterPageLoad"></span>
+
+			<div class="breatheRing">
+				<span class="buttonText cssTransitionsAfterPageLoad"></span>
+
+				<div class="breathe">
+					<span class="buttonText cssTransitionsAfterPageLoad"></span>
+
+					<div class="label inhale">
+						<span class="buttonText cssTransitionsAfterPageLoad">INHALE</span>
+					</div>
+
+					<div class="label hold">
+						<span class="buttonText cssTransitionsAfterPageLoad">HOLD</span>
+					</div>
+
+					<div class="label exhale">
+						<span class="buttonText cssTransitionsAfterPageLoad">EXHALE</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="details">
+				<span class="buttonText cssTransitionsAfterPageLoad"></span>
+
+				<div class="options">
+					<span class="buttonText cssTransitionsAfterPageLoad"><a class="hideOnMobile" href="#fullscreen" id="fullscreenButton" onclick="toggleFullScreen()">Fullscreen</a> &nbsp; <a href="#play" id="playButton"><span id="audio">Play Audio</span></a></span>
+				</div>
+
+				<div class="timer">
+					You've spent <span class="time">00:00:00</span> here.
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="foot">
+		<div class="wrapper">
+			<div class="box">
+				<div class="boxSidebar">
+					<h1>Install on your iOS device</h1>
+					<img src="apple-touch-icon.png" style="float: right; width: 80px; border-radius: 22.37%; margin: 20px 0px 20px 20px;">
+
+					<p>Install our lightweight web app to practice your box breathing exercise on the go.</p>
+
+					<ol>
+						<li>Open this page on your iOS device.</li>
+						<li>Tap the share (<img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTguMS4xLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ0MS4xMjEgNDQxLjEyMSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDQxLjEyMSA0NDEuMTIxOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMzc2LjY3NywxNzEuOTU0aC03MS45NjdjLTkuMzUsMC0xNyw3LjY1LTE3LDE3czcuNjUsMTcsMTcsMTdoNTQuNjgzdjIwMS4xNjdIODEuNzI3VjIwNS45NTRoNjAuMzVjOS4zNSwwLDE3LTcuNjUsMTctMTcgICAgcy03LjY1LTE3LTE3LTE3SDY0LjQ0NGMtOS4zNSwwLTE2LjcxNyw4LjUtMTYuNzE3LDE3Ljg1djIzNS43MzNjMCw5LjM1LDcuMzY3LDE1LjU4MywxNi43MTcsMTUuNTgzaDMxMi4yMzMgICAgYzkuMzUsMCwxNi43MTctNi4yMzMsMTYuNzE3LTE1LjU4M1YxODkuODA0QzM5My4zOTQsMTgwLjQ1NCwzODYuMDI3LDE3MS45NTQsMzc2LjY3NywxNzEuOTU0eiIgZmlsbD0iIzU2OWNkNSIvPgoJCTxwYXRoIGQ9Ik0yMTcuNzI3LDI5OS40NTRjOS4zNSwwLDE3LTcuNjUsMTctMTdWNTIuMTA0bDcyLjUzMyw2NC42YzMuMTE3LDIuODMzLDcuMzY3LDQuMjUsMTEuMzMzLDQuMjUgICAgYzQuODE3LDAsOS4zNS0xLjk4MywxMi43NS01LjY2N2M2LjIzMy03LjA4Myw1LjY2Ny0xNy44NS0xLjQxNy0yNC4wODNsLTk3Ljc1LTg2Ljk4M2MtNi4yMzMtNS4zODMtMTUuMy01LjY2Ny0yMS44MTctMC41NjcgICAgYy0zLjExNywxLjQxNy01LjY2NywzLjk2Ny03LjM2Nyw2LjhsLTg0LjcxNyw4MS4zMTdjLTYuOCw2LjUxNy03LjA4MywxNy4yODMtMC41NjcsMjQuMDgzYzYuNTE3LDYuOCwxNy4yODMsNy4wODMsMjQuMDgzLDAuNTY3ICAgIGw1OC45MzMtNTYuNjY3djIyMi43QzIwMC43MjcsMjkxLjgwNCwyMDguMzc3LDI5OS40NTQsMjE3LjcyNywyOTkuNDU0eiIgZmlsbD0iIzU2OWNkNSIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" style="width: 16px; height: 20px; vertical-align: bottom;">) icon.</li>
+						<li>Select 'Add to Homescreen'.</li>
+						<li>Tap 'Add'.</li>
+					</ol>
+
+					<p>You will then be able to launch this app from your homescreen.</p>
+				</div>
+
+				<div class="boxHeader">
+					<h1>Box breathing exercise</h1>
+				</div>
+
+				<div class="boxContent">
+					<p>Box breathing, or four-square breathing, involves inhaling to a count of four, holding your lungs full for a count of four, exhaling at the same pace, and holding your lungs empty for a count of four. Repeat for as long as required.</p>
+					<p>Pioneered by US special forces for controlled breathing in high stress situations, this method is also an exceptionally effective meditation tool and can help to reduce anxiety and focus the mind.</p>
+					<p>Box breathing is very simple to practice. Simply relax your body and do the following:</p>
+					
+                    <ol>
+						<li>Let out all of the air in your lungs to the count of four.</li>
+						<li>Keep your lungs empty for a count of four.</li>
+						<li>Inhale for a count of four.</li>
+						<li>Keep your lungs full for a count of four.</li>
+					</ol>
+
+					<p>Any feedback on this page is very appreciated, you can get in touch <a href="https://vividwell.com/">here</a>.</p>
+
+					<p><em>Audio courtesy of bensound.com.</em></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="copyright">
+		<div class="wrapper">
+			<div class="footerBrief">
+				<div class="footerLogo">
+					<svg class="cssTransitionsAfterPageLoad" viewbox="0 0 1887 1136" xmlns="http://www.w3.org/2000/svg">
+					    <path d="M1882.125 10.094h-784.246L553.945 748.519l207.259 281.362c94.337 128.059 274.158 131.938 371.212 0l55.88-75.97-111.817-151.805-64.388 86.704c-35.233 47.45-95.404 46.534-129.75 0l-104-140.87c206.167-279.938 156.58-212.592 404.363-549.038h336.358l-292.016 397.496-129.271-175.488L985.7 572.823l241.625 328.025c218.27-296.75 436.392-593.796 654.8-890.75v-.004zM373.908 198.902h336.358l84.809 116.117 111.97-152.013L795.088 10.09H10.85l504.03 685.326 111.996-152.05-252.967-344.463z" fill-rule="nonzero"></path>
+                    </svg> 
+                    <strong>vivid</strong>well
+				</div>
+
+				<p>Tracking & insights for your mental wellbeing.</p>
+				<a class="cssTransitionsAfterPageLoad footerButton" href="https://vividwell.com/">Sign up free</a>
+			</div>
+
+			<div class="footerLinks">
+				<p>&copy; Vividwell 2018. All rights reserved.</p>
+				<a href="#">Privacy</a> <a href="#">Support</a>
+			</div>
+		</div>
+
+		<div class="clearfix"></div>
+	</div>
+    
+	<audio controls="" id="linkAudio"><source src="relax.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio> 
+	
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+	<script src="https://cdn.rawgit.com/robcowie/jquery-stopwatch/master/jquery.stopwatch.js"></script> 
+	<script src="script.js"></script>
+</body>
+</html>

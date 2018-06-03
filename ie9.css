@@ -1,0 +1,11 @@
+.main {
+    display: none !important;
+}
+
+.browserWarning {
+   background: #e84118;
+    padding: 50px 20px;
+    text-align: center;
+    color: #fff;
+    display: block;
+}
